@@ -18,7 +18,6 @@ CMD*/
 
 let text = "";
 
-// если message это строка (а не null)
 if (typeof message === "string" && message.length > 0) {
   text = message.replace(/^\/echo(@\w+)?\s*/, "");
 }
