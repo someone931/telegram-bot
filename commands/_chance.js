@@ -16,6 +16,6 @@
   group: 
 CMD*/
 
-const numb = Math.floor(Math.random() * 100); // от 0 до 99999
+const numb = Math.floor(Math.random() * 100);
 
 Bot.sendMessage("🤔Думаю шанс " + numb + "%");
