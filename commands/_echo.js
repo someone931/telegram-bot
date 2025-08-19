@@ -1,0 +1,31 @@
+/*CMD
+  command: /echo
+  help: 
+  need_reply: false
+  auto_retry_time: 
+  folder: 
+
+  <<ANSWER
+
+  ANSWER
+
+  <<KEYBOARD
+
+  KEYBOARD
+  aliases: /echo@ehrrubot
+  group: 
+CMD*/
+
+let text = "";
+
+// если message это строка (а не null)
+if (typeof message === "string" && message.length > 0) {
+  text = message.replace(/^\/echo(@\w+)?\s*/, "");  // убираем /echo или /echo@bot
+}
+
+// если текста нет
+if (!text) {
+  Bot.sendMessage("❗ Нечего повторять!");
+} else {
+  Bot.sendMessage(text);
+}
