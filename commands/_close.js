@@ -29,7 +29,7 @@ if (parts.length < 2) {
 
   for (let i = 0; i < rooms.length; i++) {
     if (rooms[i].code === code) {
-      rooms.splice(i, 1); // удаляем руму
+      rooms.splice(i, 1);
       found = true;
       break;
     }
