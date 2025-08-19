@@ -20,10 +20,9 @@ let text = "";
 
 // если message это строка (а не null)
 if (typeof message === "string" && message.length > 0) {
-  text = message.replace(/^\/echo(@\w+)?\s*/, "");  // убираем /echo или /echo@bot
+  text = message.replace(/^\/echo(@\w+)?\s*/, "");
 }
 
-// если текста нет
 if (!text) {
   Bot.sendMessage("❗ Нечего повторять!");
 } else {
